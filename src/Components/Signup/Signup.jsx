@@ -85,12 +85,12 @@ const Signup = () => {
   return (
     <div className="Signup_main_div">
       <div className="Signup_sub_main_div">
-        <div className="signup_back_icon_div">
+        {/* <div className="signup_back_icon_div">
           <ArrowBackIosNewIcon
             style={{ fontSize: "1.5rem" }}
             onClick={() => navigate(-1)}
           />
-        </div>
+        </div> */}
         <div className="signup_image_container">
           <img src={FullStackLogo} alt="" className="signup_logo_css" />
         </div>
@@ -154,6 +154,18 @@ const Signup = () => {
             didPressButton={() => handleSignupWithEmail()}
             text={"Create Account"}
           />
+        </div>
+        <div className="dont_have_account_div">
+          <text>
+            Already have an account?
+            <text
+              className="Sign_up_text_css"
+              onClick={() => navigate("/signin")}
+              style={{ paddingLeft: '5px' }}
+            >
+              Login
+            </text>
+          </text>
         </div>
         <div className="terms_condition_div_main">
           <text>

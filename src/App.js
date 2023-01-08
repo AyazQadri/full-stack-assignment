@@ -21,7 +21,7 @@ function App() {
           <Route exact path='/notifications' element={<NotificationScreen />} />
           <Route exact path='/upload/photo' element={<PhotoScreen />} />
           <Route exact path='/write/text' element={<TextScreen />} />
-          <Route exact path='/calculate' element={<CalculatorScreen />} />
+          <Route exact path='/calculator' element={<CalculatorScreen />} />
         </Routes>
       </BrowserRouter>
     </div>

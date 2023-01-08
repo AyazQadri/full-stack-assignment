@@ -9,10 +9,11 @@ import PasswordDialog from '../Atoms/Dialog/Dialog';
 import { signInWithEmailAndPassword, signInWithPopup, updateProfile } from 'firebase/auth';
 import { auth } from '../../Services/Firebase/config';
 import CustomAlert from "../Atoms/Alert/CustomAlert";
+import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 
 
 const Login = () => {
-
+  const userAuth = getAuth()
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(true)
   const [email, setEmail] = useState()
@@ -58,10 +59,17 @@ const Login = () => {
   }
 
   const resetPasswordSubmitButton = () => {
-
+    console.log('clicked')
+    sendPasswordResetEmail(auth, email).then(() => {
+      setShowPasswordPopup(false)
+      showAlertMessage(true, "success", "Success", "Password Reset Email sent Successfully, Check your Inbox!")
+    })
+    .catch((error) => {
+      setShowPasswordPopup(false)
+      showAlertMessage(true, 'error', "Error", error.message)
+    });
   }
 
-  
 
   
   return (

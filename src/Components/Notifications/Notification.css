@@ -1,0 +1,34 @@
+.notification_main_div{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+.notification_sub_main{
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f7fc;
+    position: relative;
+}
+.Notification_image_container{
+    height: 140px;
+    /* background-color: cadetblue; */
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    object-fit: contain;
+}
+.tab_screen{
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+    /* background-color: cadetblue; */
+    max-width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -54,9 +54,9 @@ const CustomAlert = ({
                 : errorType == "success"
                 ? "3px solid #E4F5DA"
                 : errorType == "warning"
-                ? "3px solid ##FACEA8"
+                ? "3px solid #FACEA8"
                 : errorType == "alert"
-                ? "3px solid ##FACEA8"
+                ? "3px solid #FACEA8"
                 : "",
             display: "flex",
             justifyContent: "center",

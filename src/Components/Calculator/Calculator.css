@@ -1,0 +1,83 @@
+.calculator_main_div{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.calculator_sub_main{
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f7fc;
+    position: relative;
+}
+.calculator_back_icon_div{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 1rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+.calculator_image_container{
+    height: 140px;
+    /* background-color: cadetblue; */
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    object-fit: contain;
+}
+.calculator_logo_css{
+    height: 100%;
+    width: 100%;
+}
+.calculator_welcome_back_signin_div{
+    color: rgb(29, 28, 28);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: 'MADE Outer Sans Alt', sans-serif;
+}
+.calculator_text_tab_screen{
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+    max-width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number_input_field_div{
+    width: 80%;
+    height: 40px;
+    border-radius: 7px;  
+    border: 1px solid lightgray;
+    outline: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.second_input_field_div{
+    width: 80%;
+    height: 40px;
+    border-radius: 7px;  
+    border: 1px solid lightgray;
+    outline: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.number_input_field_css{
+    height: 90%;
+    width: 100%;
+    border-radius: 7px;
+    padding-left: .9rem;
+    outline: none;
+    border: none;
+    background-color: #f8f7fc;
+    font-size: 15px;
+}

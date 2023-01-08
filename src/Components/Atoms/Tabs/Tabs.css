@@ -1,0 +1,31 @@
+.tabs_screen_main_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: cornflowerblue; */
+}
+.single_tab{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* background-color: cadetblue; */
+}
+.photo_single_tab{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    width: 23%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: cadetblue; */
+    margin-left: 10px;
+}
+.tab_icon_div{
+
+}
+.notification_label{
+    color: darkgray;
+}

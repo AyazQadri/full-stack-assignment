@@ -1,0 +1,89 @@
+.texxt_main_div{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.text_sub_main{
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f7fc;
+    position: relative;
+}
+.text_back_icon_div{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 1rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+.text_image_container{
+    height: 140px;
+    /* background-color: cadetblue; */
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    object-fit: contain;
+}
+.text_logo_css{
+    height: 100%;
+    width: 100%;
+}
+.text_welcome_back_signin_div{
+    color: rgb(29, 28, 28);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: 'MADE Outer Sans Alt', sans-serif;
+}
+.text_main_div{
+    display: flex;
+    flex-direction: column;
+    position: fixed !important;
+    bottom: 0%;
+    position: relative;
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 390px;
+    min-height: 340px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: #FFFFFF;
+    z-index:3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_area_Css{
+width: 80%;
+display: flex;
+justify-content: center;
+}
+.ef-button--container_save{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
+._text_tab_screen{
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+    max-width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_and_icon_main{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+}
