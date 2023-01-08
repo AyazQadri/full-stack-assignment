@@ -1,37 +1,39 @@
-.Signup_main_div{
+.Login_screen_main_div{
     display: flex;
     justify-content: center;
     height: 100vh;
     width: 100vw;
 }
-.Signup_sub_main_div{
+.Login_screen_sub_main{
     width: 390px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f8f7fc;
+    /* background-color: cadetblue; */
 }
-.signup_back_icon_div{
+.back_icon_div{
     display: flex;
     align-self: flex-start;
     margin-left: 1rem;
     padding-top: 2rem;
     font-size: 2rem;
 }
-.signup_image_container{
-    height: 130px;
+.Login_image_container{
+    height: 140px;
+    /* background-color: cadetblue; */
     width: 130px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     object-fit: contain;
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
-.signup_logo_css{
+.Login_sapid_logo_css{
     height: 100%;
     width: 100%;
 }
-.create_your_account_text_div{
+.welcome_back_signin_div{
     color: rgb(29, 28, 28);
     text-align: center;
     font-weight: 600;
@@ -39,7 +41,7 @@
     line-height: 2.5rem;
     font-family: 'MADE Outer Sans Alt', sans-serif;
 }
-.signup_input_fields_main_div{
+.both_input_field_main_div{
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
@@ -47,35 +49,42 @@
     justify-content: center;
     align-items: center;
 }
-.signup_one_input_field_div{
+.single_input_field_div{
     display: flex;
     justify-content: center;
     width: 100%;
     margin-bottom: 1rem;
-    background-color: #f8f7fc;
-    /* background-color: cadetblue; */
+}
+.forgot_password_div{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: underline;
+    color: rgb(2, 2, 53);
+    /* font-size: medium; */
+    font-weight: 500;
+    font-family: 'MADE Outer Sans Alt', sans-serif;
+    cursor: pointer;
 }
 .continue_btn_div{
-    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: center;
     width: 80%;
-    height: 5%;
-    margin-top: 10px;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
-.terms_condition_div_main{
-    font-size: 1rem;
+.dont_have_account_div{
+    /* font-size: 14px; */
     font-family: 'MADE Outer Sans Alt', sans-serif;
     display: flex;
     align-items: flex-end;
     padding-top: 8px;
     padding-bottom: 2rem;
-    text-align: center;
-    font-size: 12px;
-    color: rgb(2, 2, 53);
-    line-height: 1.2rem;
 }
-.terms_condition_css{
+.Sign_up_text_css{
+    /* font-size: 14px; */
     font-weight: 600;
-    color: rgb(2, 2, 53);
+    text-decoration: underline;
+    cursor: pointer;
     font-family: 'MADE Outer Sans Alt', sans-serif;
 }

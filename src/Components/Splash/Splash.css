@@ -1,0 +1,39 @@
+.Splash_screen_main_div{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.Splash_screen_sub_main_div{
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: coral; */
+    background-color: #f8f7fc;
+}
+.full_stack_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 5rem;
+}
+.logo_cssss{
+    height: 100%;
+    width: 100%;
+}
+.Splash_image_container{
+    height: 180px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    object-fit: contain;
+    margin-top: -3rem;
+}   
+.Splash_logo_css{
+    height: 100%;
+    width: 100%;
+}

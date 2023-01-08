@@ -1,0 +1,30 @@
+.input_field_outlined_main{
+    width: 80%;
+    height: 40px;
+    /* background-color: red; */
+    border-radius: 7px;  
+    border: 1px solid lightgray;
+    /* background-color: #f8f7fc; */
+    outline: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.input_field_css_outlined{
+    height: 90%;
+    width: 100%;
+    border-radius: 7px;
+    padding-left: .9rem;
+    outline: none;
+    border: none;
+    background-color: #f8f7fc;
+    font-size: 15px;
+}
+.showpassword_icon_dv{
+    position: absolute;
+}
+.input_field_css_outlined::placeholder{
+    color: grey;
+    font-family: 'MADE Outer Sans Alt', sans-serif;
+
+}
