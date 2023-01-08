@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SplashScreen from './Screens/SplashScreen/SplashScreen';
+import SignupScreen from './Screens/SignupScreen/SignupScreen';
+import NotificationScreen from './Screens/NotificationScreen/NotificationScreen';
+import PhotoScreen from './Screens/PhotoScreen/PhotoScreen';
+import TextScreen from './Screens/TextScreen/TextScreen';
+import CalculatorScreen from './Screens/CalculatorScreen/CalculatorScreen';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<SplashScreen />} />
+          <Route exact path='/signup' element={<SignupScreen />} />
+          <Route exact path='/notifications' element={<NotificationScreen />} />
+          <Route exact path='/upload/photo' element={<PhotoScreen />} />
+          <Route exact path='/write/text' element={<TextScreen />} />
+          <Route exact path='/calculate' element={<CalculatorScreen />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
