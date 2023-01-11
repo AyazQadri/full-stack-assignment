@@ -145,7 +145,7 @@ const Signup = () => {
             >
               {passwordStrengthText}
             </Box>}
-            {showPasswordInstructions && <div style={{ width: '80%', fontSize: 'small', color: 'grey' }}>
+            { <div style={{ width: '80%', fontSize: 'small', color: 'grey' }}>
               Password must contain combination of Small, Capital, Numbers and Special Characters. Like A@2asdF2020!!*
             </div>}
         </div>

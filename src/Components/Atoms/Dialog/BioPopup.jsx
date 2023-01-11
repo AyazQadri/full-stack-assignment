@@ -21,10 +21,10 @@ const BioPopup = ({ showPopup, hidePopup, data }) => {
       </DialogTitle>
       <DialogContent>
         <DialogContentText id="alert-dialog-slide-description">
-          {data?.userBio}
+          {data?.userBio ? data?.userBio : "Nothing Saved Yet"}
         </DialogContentText>
       </DialogContent>
-      <DialogActions style={{ display: 'flex', alignSelf: 'center', marginBottom: '10px' }}>
+      {data?.userBio ? <DialogActions style={{ display: 'flex', alignSelf: 'center', marginBottom: '10px' }}>
         <Button
           onClick={hidePopup}
           style={{
@@ -47,7 +47,19 @@ const BioPopup = ({ showPopup, hidePopup, data }) => {
         >
           Agree
         </Button>
-      </DialogActions>
+      </DialogActions> : <DialogActions>
+      <Button
+          onClick={hidePopup}
+          style={{
+            width: "7rem",
+            height: "20%",
+            color: "white",
+            backgroundColor: "#655CC9",
+          }}
+        >
+          Cancel
+        </Button>
+        </DialogActions>}
     </Dialog>
   );
 };

@@ -10,6 +10,7 @@ import { TextField } from "@mui/material";
 import { Button } from "@mui/material";
 import { update, getDatabase, ref, get, child } from "firebase/database";
 import BioPopup from "../Atoms/Dialog/BioPopup";
+import CustomAlert from "../Atoms/Alert/CustomAlert";
 
 const Text = () => {
   const db = getDatabase();
@@ -19,15 +20,30 @@ const Text = () => {
   const [showSlide, setShowSlide] = useState(false);
   const [showBioPopup, setShowBioPopup] = useState(false);
   const [data, setData] = useState()
-
+  const [showAlert, setShowAlert] = useState(false)
+  const [alert, setAlert] = useState({
+    title: '',
+    text: '',
+    errorType: ''
+  })
   const submit = () => {
     update(ref(db, "User"), {
       userBio: userBio
     })
     setShowSlide(false)
     setUserBio('')
+  showAlertMessage(true, 'success', "Success", "Data Saved Successfully!")
   }
 
+  const showAlertMessage = (showAlert, errorType, title, text ) => {
+    setAlert({
+      ...alert,
+      title: title,
+      text: text, 
+      errorType: errorType
+    })
+    setShowAlert(showAlert)
+  }
   const fetchBioFirebase = () => {
     get(child(dbRef, `User`)).then((response) => {
       setData(response.val())
@@ -138,6 +154,19 @@ const Text = () => {
             </div>
           </div>
         </Slide>
+        <div>
+        <CustomAlert 
+        showAlert={showAlert}
+        hideAlert={() => setShowAlert(false)}
+        confirmPressed={() => setShowAlert(false)}
+        title={alert.title}
+        text={alert.text}
+        errorType={alert.errorType}
+        showCancelButton={false}
+        showConfirmButton={true}
+        confirmButtonText={"Ok"}
+        />
+      </div>
         <div className="_text_tab_screen">
           <Tabs
             NotificationPressed={() => navigate("/notifications")}
