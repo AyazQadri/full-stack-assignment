@@ -37,7 +37,7 @@ const Calculator = () => {
 
   })
   
-  const baseURL = "http://localhost:3000"
+  const baseURL = "https://simple-calculator-production-7f70.up.railway.app"
 
   const Endpoints = {
     addition: "/add/",
