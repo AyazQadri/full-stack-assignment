@@ -76,6 +76,7 @@ const Signup = () => {
 
       } else {
         setShowPasswordInstructions(true)
+        showAlertMessage(true, "alert", "Info", "Please use the Strong Password! See Instructions")
       }
     } else if (!regEx.test(userData.email) && userData.email == "") {
       setShowEmailError(true);
